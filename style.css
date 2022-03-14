@@ -1,0 +1,46 @@
+header{
+    width: 115%;
+    text-align: center;
+}
+
+/*
+@font-face {
+    font-family: main;
+    src: url(minecraft-enchantment.ttf);
+  }
+*/
+
+body{
+    font-family: main;
+    font-size: 1.25em;
+    margin:0;
+    text-align: center;
+}
+
+.wert{
+    width: 4em;
+    height: 1.5em;
+    margin-right: 0.2em;
+    font-size: 1em;
+    text-align: center; 
+}
+
+.prozent{
+    width: 1em;
+    height: 1.5em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center; 
+}
+
+.select{
+    width: 8em;
+    height: 1.5em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}

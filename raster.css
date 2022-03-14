@@ -1,0 +1,50 @@
+/*----------------------header------------------------*/
+header{
+  font-size: 2em;
+  background:#298A08;
+  padding:1%;
+  color:white;
+}
+
+/*---------------------------raster-------------------------*/
+.raster{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	padding-left: 2em;
+	
+}
+
+/*---------------------------Menu - Inhaltsverzeichnis-----------------------*/
+.menu{
+  background-color: #E0F8E0;
+  padding-top: 2em;
+  height:150vh;
+  
+  
+}
+
+.menu > a{ /*Verlinkung*/
+  text-decoration: none;
+  color:black;
+}
+
+
+/*-------------------------------Punkt des Inhaltsverzeichnis-----------------------*/
+.menuPunkt{
+	text-align: center;
+	font-size: 1.1em;
+	padding: 1em 1em 1em 1em; /*oben rechts unten links*/
+	
+}
+
+.menuPunkt:hover{ /*Mauseffekt*/
+  background:#A9F5A9;
+}
+
+
+
+/*---------------------------Inhalt-----------------------*/
+.inhalt{
+  text-align: left;
+  padding: 1.5em;
+}

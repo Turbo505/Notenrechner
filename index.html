@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8"/>
+
+    <!-- Links für Website -->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="variable.js"></script>
+
+    <!-- Links für Raster -->
+    <link rel="stylesheet" href="raster.css">
+    <script src="menu.js"></script>
+    
+    <title>Abiturberechnung</title>
+
+    </head>
+
+    <body>
+        <header> Berechnung Abiturnote </header>
+        <div class ="raster">
+            <div id="menu" class="menu"> </div>
+                <!-- EINSTELLUNGEN -->
+                <div id="inputs">
+                    <form id="inputForm">
+                        <h1> Prüfungsfächer </h1>
+                        <br>   
+                        <h2> Leistungskurse </h2>
+                        <p>
+                            <select class="select" id="setlk1">
+                                <option value="0" disabled selected>1. LK</option> 
+                                <option value="1">D</option>
+                                <option value="2">E</option>
+                                <option value="3">M</option>
+                                <option value="4">BIO</option>
+                                <option value="5">CH</option>
+                                <option value="6">PH</option>
+                            </select>
+
+                            <input type=number id="lk1q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="lk1q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="lk1q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="lk1q4" class="wert" min=0 max=15 placeholder=Q4>
+                            <input type=number id="lk1abi" class="wert" min=0 max=15 placeholder=Abi>
+                        </p>
+                        <p>
+                            <select class="select" id="setlk2"> 
+                                <option value="0" disabled selected>2. LK</option> 
+                                <option value="1">ERNÄ</option>
+                                <option value="2">PRIN</option>
+                                <option value="3">WILE</option>
+                            </select>
+
+                            <input type=number id="lk2q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="lk2q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="lk2q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="lk2q4" class="wert" min=0 max=15 placeholder=Q4>
+                            <input type=number id="lk2abi" class="wert" min=0 max=15 placeholder=Abi>
+                        </p>
+                        <br>
+                        <br>
+                        <h2> Prüfungsfächer (Grundkurse) </h2>
+                        <p>
+                            <select class="select" id="setpf1">
+                                <option value="0" disabled selected>1. PF</option> 
+                                <option value="1">D</option>
+                                <option value="2">E</option>
+                                <option value="3">SPA</option>
+                                <option value="4">G</option>
+                                <option value="5">POWI</option>
+                                <option value="6">ERÖK</option>
+                                <option value="7">REV</option>
+                                <option value="8">RKA</option>
+                                <option value="9">ERÖK</option>
+                                <option value="10">G</option>
+                                <option value="11">POWI</option>
+                                <option value="12">ERÖK</option>
+                            </select>
+
+                            <input type=number id="pf1q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="pf1q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="pf1q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="pf1q4" class="wert" min=0 max=15 placeholder=Q4>
+                            <input type=number id="pf1abi" class="wert" min=0 max=15 placeholder=Abi>
+                        </p>
+                        <p>
+                            <select class="select" id="setpf2">
+                                <option value="0" disabled selected>2. PF</option> 
+                                <option value="1">D</option>
+                                <option value="2">E</option>
+                                <option value="3">SPA</option>
+                                <option value="4">G</option>
+                                <option value="5">POWI</option>
+                                <option value="6">ERÖK</option>
+                                <option value="7">REV</option>
+                                <option value="8">RKA</option>
+                                <option value="9">ERÖK</option>
+                                <option value="10">G</option>
+                                <option value="11">POWI</option>
+                                <option value="12">ERÖK</option>
+                            </select>
+
+                            <input type=number id="pf2q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="pf2q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="pf2q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="pf2q4" class="wert" min=0 max=15 placeholder=Q4>
+                            <input type=number id="pf2abi" class="wert" min=0 max=15 placeholder=Abi>
+                        </p>
+                        <p>
+                            <select class="select" id="setpf3">
+                                <option value="0" disabled selected>3. PF</option> 
+                                <option value="1">D</option>
+                                <option value="2">E</option>
+                                <option value="3">SPA</option>
+                                <option value="4">G</option>
+                                <option value="5">POWI</option>
+                                <option value="6">ERÖK</option>
+                                <option value="7">REV</option>
+                                <option value="8">RKA</option>
+                                <option value="9">ERÖK</option>
+                                <option value="10">G</option>
+                                <option value="11">POWI</option>
+                                <option value="12">ERÖK</option>
+                            </select>
+
+                            <input type=number id="pf3q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="pf3q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="pf3q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="pf3q4" class="wert" min=0 max=15 placeholder=Q4>
+                            <input type=number id="pf3abi" class="wert" min=0 max=15 placeholder=Abi>
+                        </p>
+
+                        <br>
+                        <br>
+                        <h1> Grundkurse </h1>
+                        <br>
+                        <p>
+                            <select class="select" id="setgk1">
+                                <option value="0" disabled selected>1. GK</option> 
+                                <option value="1">E</option>
+                                <option value="2">SPA/F</option>
+                                <option value="3">KU/MU/DSP/EK/PHIL</option>
+                                <option value="4">POWI</option>
+                                <option value="5">RKA/REV/ETHI</option>
+                                <option value="6">G</option>
+                                <option value="7">ERÖK</option>
+                                <option value="8">eGK (PRIN,WILE,ERNÄ)</option>
+                                <option value="9">M</option>
+                                <option value="10">BIO/PH/CH</option>
+                                <option value="11">ITEC</option>
+                                <option value="12">REWE</option>
+                                <option value="13">DATE</option>
+                                <option value="14">SPO</option>
+                            </select>
+
+                            <input type=number id="gk1q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="gk1q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="gk1q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="gk1q4" class="wert" min=0 max=15 placeholder=Q4>
+                        </p>
+
+                        <p>
+                            <select class="select" id="setgk2">
+                                <option value="0" disabled selected>2. GK</option> 
+                                <option value="1">E</option>
+                                <option value="2">SPA/F</option>
+                                <option value="3">KU/MU/DSP/EK/PHIL</option>
+                                <option value="4">POWI</option>
+                                <option value="5">RKA/REV/ETHI</option>
+                                <option value="6">G</option>
+                                <option value="7">ERÖK</option>
+                                <option value="8">eGK (PRIN,WILE,ERNÄ)</option>
+                                <option value="9">M</option>
+                                <option value="10">BIO/PH/CH</option>
+                                <option value="11">ITEC</option>
+                                <option value="12">REWE</option>
+                                <option value="13">DATE</option>
+                                <option value="14">SPO</option>
+                            </select>
+
+                            <input type=number id="gk2q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="gk2q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="gk2q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="gk2q4" class="wert" min=0 max=15 placeholder=Q4>
+                        </p>
+
+                        <p>
+                            <select class="select" id="setgk3">
+                                <option value="0" disabled selected>3. GK</option> 
+                                <option value="1">E</option>
+                                <option value="2">SPA/F</option>
+                                <option value="3">KU/MU/DSP/EK/PHIL</option>
+                                <option value="4">POWI</option>
+                                <option value="5">RKA/REV/ETHI</option>
+                                <option value="6">G</option>
+                                <option value="7">ERÖK</option>
+                                <option value="8">eGK (PRIN,WILE,ERNÄ)</option>
+                                <option value="9">M</option>
+                                <option value="10">BIO/PH/CH</option>
+                                <option value="11">ITEC</option>
+                                <option value="12">REWE</option>
+                                <option value="13">DATE</option>
+                                <option value="14">SPO</option>
+                            </select>
+
+                            <input type=number id="gk3q1" class="wert" min=0 max=15 placeholder=Q1>
+                            <input type=number id="gk3q2" class="wert" min=0 max=15 placeholder=Q2>
+                            <input type=number id="gk3q3" class="wert" min=0 max=15 placeholder=Q3>
+                            <input type=number id="gk3q4" class="wert" min=0 max=15 placeholder=Q4>
+                        </p>
+                        <button onclick="genGK()"> Weiterer GK </button>
+                        <br>
+                        <br>
+                        <button onclick="start()"> Berechnen </button>
+                    </form>
+                </div>
+
+                <!-- INPUTS 
+                <div id="inputs" style="display: none;">
+                    <br>
+                    <div id="invorjahr">
+                    </div>
+                    <div id="inmnoten">
+                    </div>
+                    <div id="insnoten">
+                    </div>
+                    <button onclick="back(1)"> Zurück </button>
+                    <button onclick="calculate(mtemp, stemp)"> Berechnen </button>
+                </div>
+                -->
+
+                <!-- ERGEBNIS -->
+                <div id="result" style="display: none;">
+                    <button onclick="back(2)"> Zurück </button>
+                    <a href="Notenberechnung.html"> <button> Neue Berechnung </button> </a>
+                </div>
+            </div>
+        </div>
+        <!-- LEGAL DISCLAIMER-->
+        <div id="disclaimer">
+            <h2> Disclaimer </h2>
+            <h3> Berechnung der Schulnoten </h3>
+            <p> •	wie kommen Noten zustanden?
+                Noten setzten sich aus den schriftlichen Leistungsnachweisen und der mündlichen Beteiligung zusammen. Allerdings werden auch kleine Tests oder Ähnliches eingerechnet.
+                In der Verordnung zur Gestaltung des Schulverhältnisses ist allerdings auch angemerkt, dass es einen pädagogischen Prozess ist.
+                <a href="https://www.rv.hessenrecht.hessen.de/bshe/document/hevr-SchulVerhGVHE2011pP26"> Gesetzestext </a>
+            </p>
+            <p>
+                •	sind die berechneten Noten auch meine wirkliche Note?
+                Ja und nein, das hängt immer von der Lehrkraft ab, teilweise kann deine Note besser oder schlechter sein, auch könntest du genau deine Note getroffen haben. Das liegt lediglich am pädagogischen Spielraum der Lehrer.
+            </p>
+            <p>
+                •	Wie funktioniert der Rechner?
+                -	Wähle ob du die Note für ein Neben- oder Hauptfach berechnest
+                -	Gibt es schon eine Note aus dem 1.Halbjahr?
+                -	Gib die Menge der mündlichen und schriftlichen Noten an 
+                -	Nachdem die Felder generiert wurden, fülle sie aus und lass dir dein Ergebnis ausgeben 
+            </p>
+        </div>
+    </body>
+</html>

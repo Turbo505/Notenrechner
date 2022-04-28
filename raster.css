@@ -3,7 +3,7 @@ header{
   font-size: 2em;
   background:#298A08;
   padding:1%;
-  color:white;
+  color:white; 
 }
 
 /*---------------------------raster-------------------------*/
@@ -18,9 +18,7 @@ header{
 .menu{
   background-color: #E0F8E0;
   padding-top: 2em;
-  height:150vh;
-  
-  
+  height: auto;
 }
 
 .menu > a{ /*Verlinkung*/

@@ -1,4 +1,5 @@
 let fächer = ["lk1", "lk2", "pf1", "pf2", "pf3", "gk1", "gk2", "gk3"];
+let gkAnzahl = 3;
 let lk1q = 0;
 let lk2q = 0;
 let pf1q = 0;

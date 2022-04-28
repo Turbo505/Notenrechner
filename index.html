@@ -2,6 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Links für Website -->
     <link rel="stylesheet" href="style.css">
@@ -13,18 +14,17 @@
     <script src="menu.js"></script>
     
     <title>Abiturberechnung</title>
-
     </head>
 
     <body>
-        <header> Berechnung Abiturnote </header>
+        <header> Notenrechner </header>
         <div class ="raster">
             <div id="menu" class="menu"> </div>
                 <!-- EINSTELLUNGEN -->
                 <div id="inputs">
                     <form id="inputForm">
                         <h1> Prüfungsfächer </h1>
-                        <br>   
+                        <br> 
                         <h2> Leistungskurse </h2>
                         <p>
                             <select class="select" id="setlk1">
@@ -208,54 +208,36 @@
                             <input type=number id="gk3q3" class="wert" min=0 max=15 placeholder=Q3>
                             <input type=number id="gk3q4" class="wert" min=0 max=15 placeholder=Q4>
                         </p>
-                        <button onclick="genGK()"> Weiterer GK </button>
+                        <button onclick="newGK()"> Weiterer GK </button>
                         <br>
                         <br>
-                        <button onclick="start()"> Berechnen </button>
                     </form>
+                    <button onclick="start()"> Berechnen </button>
                 </div>
-
-                <!-- INPUTS 
-                <div id="inputs" style="display: none;">
-                    <br>
-                    <div id="invorjahr">
-                    </div>
-                    <div id="inmnoten">
-                    </div>
-                    <div id="insnoten">
-                    </div>
-                    <button onclick="back(1)"> Zurück </button>
-                    <button onclick="calculate(mtemp, stemp)"> Berechnen </button>
-                </div>
-                -->
 
                 <!-- ERGEBNIS -->
-                <div id="result" style="display: none;">
-                    <button onclick="back(2)"> Zurück </button>
-                    <a href="Notenberechnung.html"> <button> Neue Berechnung </button> </a>
+                <div id="result">
+                    <div id="outputCalculated">
+                        <input id="lk1" readonly>
+                        <br>
+                        <input id="lk2" readonly>
+                        <br>
+                        <input id="pf1" readonly>
+                        <br>
+                        <input id="pf2" readonly>
+                        <br>
+                        <input id="pf3" readonly>
+                        <br>
+                        <input id="gk1" readonly>
+                        <br>
+                        <input id="gk2" readonly>
+                        <br>
+                        <input id="gk3" readonly>
+                    </div>
+                    <button onclick="back()"> Zurück </button>
+                    <a href="index.html"> <button> Neue Berechnung </button> </a>
                 </div>
             </div>
-        </div>
-        <!-- LEGAL DISCLAIMER-->
-        <div id="disclaimer">
-            <h2> Disclaimer </h2>
-            <h3> Berechnung der Schulnoten </h3>
-            <p> •	wie kommen Noten zustanden?
-                Noten setzten sich aus den schriftlichen Leistungsnachweisen und der mündlichen Beteiligung zusammen. Allerdings werden auch kleine Tests oder Ähnliches eingerechnet.
-                In der Verordnung zur Gestaltung des Schulverhältnisses ist allerdings auch angemerkt, dass es einen pädagogischen Prozess ist.
-                <a href="https://www.rv.hessenrecht.hessen.de/bshe/document/hevr-SchulVerhGVHE2011pP26"> Gesetzestext </a>
-            </p>
-            <p>
-                •	sind die berechneten Noten auch meine wirkliche Note?
-                Ja und nein, das hängt immer von der Lehrkraft ab, teilweise kann deine Note besser oder schlechter sein, auch könntest du genau deine Note getroffen haben. Das liegt lediglich am pädagogischen Spielraum der Lehrer.
-            </p>
-            <p>
-                •	Wie funktioniert der Rechner?
-                -	Wähle ob du die Note für ein Neben- oder Hauptfach berechnest
-                -	Gibt es schon eine Note aus dem 1.Halbjahr?
-                -	Gib die Menge der mündlichen und schriftlichen Noten an 
-                -	Nachdem die Felder generiert wurden, fülle sie aus und lass dir dein Ergebnis ausgeben 
-            </p>
         </div>
     </body>
 </html>
